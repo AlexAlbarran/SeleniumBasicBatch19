@@ -10,17 +10,18 @@ import java.sql.Driver;
 
 public class CommonMethods {
     public static WebDriver driver;
+
     public static void openBrowserAndLaunchApplication() throws IOException {
 
-        switch (ConfigReader.read("browser")){
+        switch (ConfigReader.read("browser")) {
             case "Chrome":
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
             case "Firefox":
-                driver=new FirefoxDriver();
+                driver = new FirefoxDriver();
                 break;
             case "Edge":
-                driver=new EdgeDriver();
+                driver = new EdgeDriver();
                 break;
             default:
                 throw new RuntimeException("invalid browser name");
@@ -29,5 +30,8 @@ public class CommonMethods {
         driver.manage().window().maximize();
         driver.get(ConfigReader.read("url"));
     }
+
+
 }
+
 

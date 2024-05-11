@@ -15,7 +15,7 @@ public class Multielements {
 
         driver.get("https://syntaxprojects.com/basic-radiobutton-demo.php");
 
-//        select all th radio buttons that have male as option
+//        select all the radio buttons that have male as option
         List<WebElement> rbMale = driver.findElements(By.xpath("//input[@value='Male']"));
         for(WebElement rb:rbMale){
             rb.click();
