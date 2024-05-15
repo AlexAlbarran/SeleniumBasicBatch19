@@ -9,16 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static utils.CommonMethods.driver;
+
 public class Explicitwait {
     public static void main(String[] args) {
-        WebDriver driver=new ChromeDriver();
 
-        driver.manage().window().maximize();
-
-        // implicit wait
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
-        driver.get("https://syntaxprojects.com/synchronization-explicit-wait.php");
 
         // click on the button  click me to display button
         // and then when the button appears up then click on the appeared  button
