@@ -15,7 +15,7 @@ public class uploadingAFile {
         driver.get("https://syntaxprojects.com/upload-image.php");
 
         WebElement imageUpload = driver.findElement(By.xpath("//input[@id='image-file']"));
-        imageUpload.sendKeys("C:\\Users\\IronMan\\Desktop\\SYNTAX.JPG");
+        imageUpload.sendKeys("C:\\Users\\IronMan\\Desktop\\SYNTAX\\Logo_SDET.JPG");
 
     }
 }
